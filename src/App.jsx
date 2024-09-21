@@ -7,7 +7,7 @@ import ProtectedRoutes from './components/ProtectedRoutes';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/Foodfare'>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/success' element={<ProtectedRoutes element={<Success/>} />} />
